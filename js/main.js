@@ -21,12 +21,19 @@ function create() {
   image.scale.setTo(0.5,0.5);
   image.anchor.setTo(0.5, 0.5);
   
+  $("canvas").addClass("img-responsive");
+  $("canvas").attr("id","game");
+  window.addEventListener('resize', function() {
+    var w = $("#game").css("width").replace(/\D/g,'');
+    game.height = w/1.77;
+  });
+
 }
 
 function update(){
   //this is where things are updated
-  game.width = $(window).width()/4*3;
-  game.height = game.width/1.77;
 }
 
+$(document).ready(function(){
 
+});

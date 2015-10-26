@@ -1,9 +1,9 @@
 body{
-  margin: 0px auto; 
+  margin: 0px; 
+  border: 0;
   background-color:white;
 }
 canvas {
-  background-color: blue; 
-  width: 50%;
-  height: auto;
+  margin: 0px; 
+  height:auto;
 }
